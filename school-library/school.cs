@@ -30,13 +30,25 @@ namespace school_library
         public School()
         {
             Name = "Untitled School";
-            PhoneNumber = "555-1234"
+            PhoneNumber = "555-1234";
         }
 
         public School(string schoolName, string schoolPhoneNumber)
         {
             Name = schoolName;
             PhoneNumber = schoolPhoneNumber;
+        }
+
+        public float AverageThreeScores(float a, float b, float c)
+        {
+            var result = (a + b + c) / 3;
+            return result;
+        }
+
+        public int AverageThreeScores(int a, int b, int c)
+        {
+            var result = (a + b + c) / 3;
+            return result;
         }
     }
 }
