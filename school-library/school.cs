@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 namespace school_library
 {
     public class School
@@ -39,16 +41,29 @@ namespace school_library
             PhoneNumber = schoolPhoneNumber;
         }
 
-        public float AverageThreeScores(float a, float b, float c)
+        public static float AverageThreeScores(float a, float b, float c)
         {
             var result = (a + b + c) / 3;
             return result;
         }
 
-        public int AverageThreeScores(int a, int b, int c)
+        public static int AverageThreeScores(int a, int b, int c)
         {
             var result = (a + b + c) / 3;
             return result;
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(Name);
+            sb.AppendLine(Address);
+            sb.Append(City);
+            sb.Append(", ");
+            sb.Append(State);
+            sb.Append("  ");
+            sb.Append(Zip);
+            return sb.ToString();
         }
     }
 }

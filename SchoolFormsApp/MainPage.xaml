@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SchoolFormsApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry Placeholder="School Name" />
+        <Entry Placeholder="School Address" />
+        <Entry Placeholder="City" />
+        <Entry Placeholder="State" />
+        <Entry Placeholder="Zip" />
+        <Entry Placeholder="Phone Number" />
+        <Entry Placeholder="Twitter Address" />
+        <Button Clicked="Button_Clicked" Text="Click"/>
+    </StackLayout>
+</ContentPage>
