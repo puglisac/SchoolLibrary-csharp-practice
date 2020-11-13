@@ -8,6 +8,10 @@ namespace school_library
         public string PaperText { get; set; }
         public float Score { get; set; }
         public float MaximumScore { get; set; }
+        public int WordCount
+        {
+            get { return PaperText.WordCount(); }
+        }
 
         public EnglishPaper()
         {
